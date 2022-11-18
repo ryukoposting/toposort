@@ -1,7 +1,6 @@
 import unittest
 import toposort
 import std/[tables, uri]
-from std/sugar import collect
 
 test "char table":
   let sampleTable = toTable {
