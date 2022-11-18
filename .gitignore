@@ -1,0 +1,7 @@
+*.exe
+*.a
+*.i
+*.out
+*.elf
+.vscode
+htmldocs
