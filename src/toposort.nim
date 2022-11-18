@@ -67,7 +67,7 @@ proc validateHashCollisions[T](k: T, h: Hash, starts: seq[(T, Hash)], depTree: T
         raise ValueError.newException(fmt"Hash collision between {$k} and {$k2}")
 
 iterator topoSort*[T: Hashable](graph: Table[T, HashableCollection[T]]): T =
-  ## Perform a topological sort over a Table of items-dependency pairs.
+  ## Perform a topological sort over a Table of item-dependency pairs.
   runnableExamples:
     import std/tables
     let dependencies = toTable {
@@ -146,7 +146,7 @@ iterator topoSort*[T: Hashable](graph: openArray[(T, HashableCollection[T])]): T
     yield item
 
 proc topoSort*[T: Hashable](graph: Table[T, HashableCollection[T]]): seq[T] =
-  ## Perform a topological sort over a Table of items-dependency pairs.
+  ## Perform a topological sort over a Table of item-dependency pairs.
   runnableExamples:
     import std/tables
     let dependencies = toTable {
