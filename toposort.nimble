@@ -1,6 +1,6 @@
 # Package
 
-version       = "0.1.0"
+version       = "1.0.0"
 author        = "Evan Perry Grove"
 description   = "Efficient, dependency-free topological sort"
 license       = "BSD-3-Clause"
